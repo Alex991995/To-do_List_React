@@ -7,11 +7,11 @@ export default function List({task, remove, done, removeTask, editTask, index, i
   
 
   return <li > 
-  <span  onClick={ ()=> setCheckState(false)} className="spanchik">{ checkState ? task : 
+  <span  onClick={ ()=> setCheckState(false)} className="edit">{ checkState ? task : 
   <input onBlur={ ()=> setCheckState(true)} onChange={event =>editTask(event, id) }/> } </span>
 
-  <span onClick={() => removeTask(index)}>{remove} </span>
+  <span  onClick={() => removeTask(index)} className="remove">{remove} </span>
 
-  <span onClick={(event) => taskDone(event) }>{done} </span>
+  <span  onClick={(event) => taskDone(event)} className="done">{done} </span>
 </li>
 }

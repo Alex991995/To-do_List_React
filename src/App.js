@@ -3,14 +3,11 @@ import uuid from 'react-uuid';
 import List from "./List";
 
 export default function App() {
-  let obj =[
-    {id: uuid(), task: 'помыть машину', remove : 'удалить', done: 'сделано' },
-  ] 
+  let obj =[] 
 
   const [notes, setNotes ] = useState(obj)
   const [value, setValue] = useState('');
 
-  // const[checkState, setCheckState] = useState(false)
 
   let result =  notes.map( (note, index) => {
   return  <List 
@@ -68,7 +65,7 @@ export default function App() {
 }
   
 
-  return <div>
+  return <div className="maim">
     <input value={value} onChange={inputValue}/>
     <button onClick={addTask}>button</button>
     <ul>

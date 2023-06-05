@@ -11,6 +11,27 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-.taskDone{
-  text-decoration:line-through
+.taskDone {
+  text-decoration: line-through;
+}
+.maim {
+  margin: 62px auto 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  text-align: center;
+}
+li {
+  list-style-type: none; 
+}
+span {
+  cursor: pointer;
+}
+.remove:hover {
+  color: rgb(237, 71, 71);
+}
+.done:hover {
+  color: blue;
+}
+.edit:hover {
+  color: blueviolet;
 }
